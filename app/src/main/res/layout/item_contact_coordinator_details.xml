@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardElevation="@dimen/item_contact_coordinator_details_cardview_elevation"
+    app:cardCornerRadius="@dimen/item_contact_coordinator_details_cardview_corner_radius"
+    android:layout_marginTop="@dimen/item_contact_coordinator_details_cardview_margin_top"
+    android:layout_marginBottom="@dimen/item_contact_coordinator_details_cardview_margin_bottom"
+    android:id="@+id/item_contact_coordinator_details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/item_contact_coordinator_details_coordinator_margin_top"
+        android:padding="@dimen/item_contact_coordinator_details_coordinator_padding"
+        android:id="@+id/item_contact_coordinator_details_coordinator" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_contact_coordinator_details_coordinator_name_text_size"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/item_contact_coordinator_details_coordinator_name"
+            android:text="@string/item_contact_coordinator_details_coordinator_name_dummy_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/item_contact_coordinator_details_call_linear_margin_top"
+            android:layout_below="@id/item_contact_coordinator_details_coordinator_name"
+            android:id="@+id/item_contact_coordinator_details_call_linear">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_contact_coordinator_details_call_icon_height"
+                android:layout_weight="0.2"
+                android:id="@+id/item_contact_coordinator_details_call_icon"
+                android:src="@drawable/call"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_contact_coordinator_details_coordinator_number_text_size"
+                android:layout_weight="0.8"
+                android:id="@+id/item_contact_coordinator_details_coordinator_number"
+                android:text="@string/item_contact_coordinator_details_coordinator_number_dummy_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/item_contact_coordinator_details_call_linear"
+            android:id="@+id/item_contact_coordinator_details_email_linear1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_contact_coordinator_details_email_icon_height"
+                android:layout_weight="0.2"
+                android:id="@+id/item_contact_coordinator_details_email_icon"
+                android:src="@drawable/mail"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_contact_coordinator_details_email_text_size"
+                android:layout_weight="0.8"
+                android:id="@+id/item_contact_coordinator_details_coordinator_email"
+                android:text="@string/item_contact_coordinator_details_coordinator_email_dummy_text" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

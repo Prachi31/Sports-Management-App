@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="prachi14075.iiitd.ac.in.sportsmanagementapp.activityAdmin.AddEventActivity">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/item_ongoing_events_relative_layout_padding"
+            android:id="@+id/item_add_event_rel_layout"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Event Details"
+                android:id="@+id/add_event_details_text"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                android:id="@+id/view_event_details"
+                android:layout_below="@id/add_event_details_text"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/add_event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_event_details"
+                android:hint="Event Name"
+                android:textSize="16dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/add_event_type"
+                android:layout_below="@id/add_event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event Type (Sport)"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_event_type"
+                android:text="Categories"
+                android:id="@+id/add_event_category_label"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="12dp"
+                android:textSize="18dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/view_categories"
+                android:layout_below="@+id/add_event_category_label"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_event_category_layout"
+                android:layout_below="@id/view_categories"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:text="Men's"
+                    android:textSize="16dp"
+                    android:textColor="#737373"
+                    android:id="@+id/check_men"
+                    android:checked="false"/>
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:text="Women's"
+                    android:textSize="16dp"
+                    android:textColor="#737373"
+                    android:id="@+id/check_women"
+                    android:checked="false"/>
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:text="Mixed"
+                    android:textSize="16dp"
+                    android:textColor="#737373"
+                    android:id="@+id/check_mixed"
+                    android:checked="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_event_sub_category_layout"
+                android:layout_below="@id/add_event_category_layout"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:text="Singles"
+                    android:textSize="16dp"
+                    android:textColor="#737373"
+                    android:id="@+id/check_singles"
+                    android:checked="false"/>
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:text="Doubles"
+                    android:textColor="#737373"
+                    android:textSize="16dp"
+                    android:id="@+id/check_double"
+                    android:checked="false"/>
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:text="Team"
+                    android:textColor="#737373"
+                    android:textSize="16dp"
+                    android:id="@+id/check_team"
+                    android:checked="false"/>
+
+            </LinearLayout>
+
+            <!--<EditText-->
+                <!--android:id="@+id/add_event_location"-->
+                <!--android:layout_below="@id/add_event_sub_category_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Location"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:inputType="text" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_event_registration_date"
+                android:text="Registration Date"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@id/add_event_sub_category_layout"
+                android:layout_marginTop="12dp"
+                android:textSize="18dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/view_registration"
+                android:layout_below="@+id/add_event_registration_date"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/add_event_registration_date"
+                android:id="@+id/add_event_reg_start_end_dates">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:id="@+id/add_event_registration_start"
+                    android:hint="Start Date"
+                    android:inputType="date" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="To"
+                    android:gravity="center"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:id="@+id/add_event_location_registration_end"
+                    android:hint="End Date"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_event_dates"
+                android:text="Start and End dates"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@id/add_event_reg_start_end_dates"
+                android:layout_marginTop="12dp"
+                android:textSize="18dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/view_start_date"
+                android:layout_below="@+id/add_event_dates"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/add_event_dates"
+                android:id="@+id/add_event_startend_dates">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:textSize="16dp"
+                    android:hint="Start date"
+                    android:gravity="center"
+                    android:id="@+id/event_start_date"
+                    android:inputType="date" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="To"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:textSize="16dp"
+                    android:inputType="date"
+                    android:gravity="center"
+                    android:id="@+id/event_end_date"
+                    android:hint="End Date"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_event_match_timings"
+                android:text="Matches will take place between"
+                android:layout_below="@id/add_event_startend_dates"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/view_match_time"
+                android:layout_below="@+id/add_event_match_timings"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/add_event_match_duration_recycler_view"
+                android:layout_below="@id/view_match_time">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_event_match_duration_recycler_view"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/add_event_add_another_duration"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_add_circle"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:text="Add another duration" />
+
+            </LinearLayout>
+
+            <!--<EditText-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/add_event_add_another_duration"-->
+                <!--android:id="@+id/add_event_status"-->
+                <!--android:hint="Status"-->
+                <!--android:layout_marginTop="16dp"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_event_add_another_duration"
+                android:id="@+id/add_event_rules_upload"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal|start"
+                    android:textSize="18dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="0.5"
+                    android:text="Rules" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:id="@+id/add_event_rules_upload_button"
+                    android:layout_weight="0.5"
+                    android:textColor="#FFFFFF"
+                    android:background="#FD5454" />
+
+            </LinearLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/grey_light"-->
+                <!--android:id="@+id/view1"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_below="@id/add_event_rules_upload"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_event_coordinator_details"
+                android:layout_below="@id/add_event_rules_upload"
+                android:text="Coordinator Details"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                android:id="@+id/view2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:layout_below="@id/add_event_coordinator_details"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/add_event_match_coordinator_recycler_view"
+                android:layout_below="@id/view2">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_event_match_coordinator_recycler_view"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/add_event_add_another_coordination"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_add_circle"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Add another coordinator" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/add_event_add_another_coordination"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/add_event_button"
+                android:text="Add Event"
+                android:textColor="#FFFFFF"
+                android:background="#FD5454"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

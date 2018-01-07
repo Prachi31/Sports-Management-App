@@ -1,0 +1,36 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_upcoming_event_details_rules_tab_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/fragment_upcoming_event_details_rules_tab_container_margin_left"
+    android:layout_marginEnd="@dimen/fragment_upcoming_event_details_rules_tab_container_margin_right"
+    tools:context="prachi14075.iiitd.ac.in.sportsmanagementapp.fragment.UpcomingEventDetailsRulesTabFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/fragment_upcoming_event_details_rules_tab_card_view_elevation"
+        android:layout_marginTop="@dimen/fragment_upcoming_event_details_rules_tab_card_view_margin_top"
+        android:layout_marginBottom="@dimen/fragment_upcoming_event_details_rules_tab_card_view_margin_bottom"
+        android:id="@+id/fragment_upcoming_event_details_rules_tab_card_view">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_upcoming_event_details_rules_tab_card_view_padding"
+            android:id="@+id/fragment_upcoming_event_details_rules_tab_scroll_view">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rules_hand_ball"
+                android:id="@+id/fragment_upcoming_event_details_rules_tab_text_view"/>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

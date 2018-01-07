@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fixtures_admin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="prachi14075.iiitd.ac.in.sportsmanagementapp.activityAdmin.FixturesActivityAdmin">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar_layout"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="8dp"
+        android:id="@+id/activity_fixtures_recycler_view_admin">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

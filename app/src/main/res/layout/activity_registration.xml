@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="prachi14075.iiitd.ac.in.sportsmanagementapp.activity.RegistrationActivity">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar_layout"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/registration_form1_card">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/registration_form1_relative_layout"
+                >
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:hint="Team's Name"
+                    android:inputType="text"
+                    android:id="@+id/registration_form1_team_name" />
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="2dp"-->
+                    <!--android:background="@color/grey_light"-->
+                    <!--android:id="@+id/view1"-->
+                    <!--android:layout_below="@id/registration_form1_team_name"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:layout_below="@id/registration_form1_team_name"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/registration_form_categories"
+                    android:textSize="18dp"
+                    android:textColor="#FD5454"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/grey_light"
+                    android:id="@+id/view2"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/registration_form_categories"/>
+
+                <RadioGroup
+                    android:id="@+id/registration_form1_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <RadioButton
+                        android:id="@+id/registration_form1_radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textSize="16dp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/registration_form1_radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:textSize="16dp"
+                        android:text="Female" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Captain"
+                    android:layout_below="@id/registration_form1_radiogroup"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/registration_form1_captain"
+                    android:textSize="18dp"
+                    android:textColor="#FD5454"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/grey_light"
+                    android:id="@+id/view3"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/registration_form1_captain"/>
+
+                <EditText
+                    android:id="@+id/registration_form1_captain_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/view3"
+                    android:hint="Name"
+                    />
+                <EditText
+                    android:id="@+id/registration_form1_captain_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_below="@id/registration_form1_captain_name"
+                    android:hint="Email ID"
+                    android:inputType="textEmailAddress"
+                    />
+
+                <EditText
+                    android:id="@+id/registration_form1_captain_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_below="@id/registration_form1_captain_email"
+                    android:hint="Contact Number"
+                    android:inputType="phone"
+                    />
+
+                <TextView
+                    android:id="@+id/registration_form1_player2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player 2"
+                    android:layout_below="@id/registration_form1_captain_number"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18dp"
+                    android:textColor="#FD5454"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/grey_light"
+                    android:id="@+id/view4"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/registration_form1_player2"/>
+
+                <EditText
+                    android:id="@+id/registration_form1_player2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/view4"
+                    android:hint="Name"
+                    />
+                <EditText
+                    android:id="@+id/registration_form1_player2_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18dp"
+                    android:layout_below="@id/registration_form1_player2_name"
+                    android:hint="Email ID"
+                    />
+
+                <EditText
+                    android:id="@+id/registration_form1_player2_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:textSize="18dp"
+                    android:layout_below="@id/registration_form1_player2_email"
+                    android:hint="Contact Number"
+                    />
+
+                <TextView
+                    android:id="@+id/registration_form1_player3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player 3"
+                    android:layout_below="@id/registration_form1_player2_number"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18dp"
+                    android:textColor="#FD5454"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/grey_light"
+                    android:id="@+id/view5"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/registration_form1_player3"/>
+
+                <EditText
+                    android:id="@+id/registration_form1_player3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textPersonName"
+                    android:layout_below="@id/view5"
+                    android:hint="Name"
+                    />
+                <EditText
+                    android:id="@+id/registration_form1_player3_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_below="@id/registration_form1_player3_name"
+                    android:hint="Email ID"
+                    />
+
+                <EditText
+                    android:id="@+id/registration_form1_player3_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:inputType="phone"
+                    android:layout_below="@id/registration_form1_player3_email"
+                    android:hint="Contact Number"
+                    />
+
+                <TextView
+                    android:id="@+id/registration_form1_player4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player 4"
+                    android:layout_below="@id/registration_form1_player3_number"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18dp"
+                    android:textColor="#FD5454"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/grey_light"
+                    android:id="@+id/view6"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/registration_form1_player4"/>
+
+                <EditText
+                    android:id="@+id/registration_form1_player4_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textPersonName"
+                    android:layout_below="@id/view6"
+                    android:hint="Name"
+                    />
+                <EditText
+                    android:id="@+id/registration_form1_player4_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_below="@id/registration_form1_player4_name"
+                    android:hint="Email ID"
+                    />
+
+                <EditText
+                    android:id="@+id/registration_form1_player4_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:inputType="phone"
+                    android:layout_below="@id/registration_form1_player4_email"
+                    android:hint="Contact Number"
+                    />
+                <TextView
+                    android:id="@+id/registration_form1_player5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player 5"
+                    android:layout_below="@id/registration_form1_player4_number"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18dp"
+                    android:textColor="#FD5454"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/grey_light"
+                    android:id="@+id/view7"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/registration_form1_player5"/>
+
+                <EditText
+                    android:id="@+id/registration_form1_player5_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textPersonName"
+                    android:layout_below="@id/view7"
+                    android:hint="Name"
+                    />
+                <EditText
+                    android:id="@+id/registration_form1_player5_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_below="@id/registration_form1_player5_name"
+                    android:hint="Email ID"
+                    />
+
+                <EditText
+                    android:id="@+id/registration_form1_player5_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:inputType="phone"
+                    android:layout_below="@id/registration_form1_player5_email"
+                    android:hint="Contact Number"
+                    />
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="200dp"
+                    android:id="@+id/registration_form1_next_button"
+                    android:layout_below="@id/registration_form1_player5_number"
+                    android:text="Next"
+                    android:textColor="#FFFFFF"
+                    android:background="#FD5454"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

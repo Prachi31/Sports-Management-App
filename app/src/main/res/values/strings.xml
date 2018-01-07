@@ -1,0 +1,63 @@
+<resources>
+
+    <string name="rules_hand_ball">There are seven players on each team (six court players and one goalie).\n\nA maximum of 12 players may dress and participate in a game for each team.\n\nThe goalkeeper must wear a different color shirt from teammates and opponents.\n\nReferees have complete authority: Their decisions are final.\n\nThe game consist of two 15 minute halves with 5 minute half time.\n\nFor a minor foul or violation, a free-throw is awarded to the opponent at the exact spot it took place.\n\nA player is allowed:\n\t\tTo run with the ball for 3 steps\n\t\tTo hold the ball for 3 seconds\n\t\t3 steps allowed before and after dribbling \n\t\tno double-dribble.\n</string>
+
+    <!--Common Starts-->
+    <string name="app_name">Sports Management App</string>
+    <string name="action_bar_profile_icon">Logout</string>
+    <string name="action_bar_notification_icon">Notifications</string>
+    <!--Common Ends-->
+
+    <!--Activity Titles Starts-->
+    <string name="title_login_activity">LogIn</string>
+    <string name="title_events_activity">Events</string>
+    <string name="title_notifications_activity">Notifications</string>
+    <string name="title_event_details_activity">Event Details</string>
+    <string name="title_registration_activity">Register</string>
+    <string name="title_my_matches_activity">My Matches</string>
+    <string name="title_fixtures_activity">Fixtures</string>
+    <!--Activity Titles Ends-->
+
+    <!--Login Activity Starts-->
+    <string name="login_activity_login_participant_text">Login As A Participant</string>
+    <string name="login_activity_view_text">OR</string>
+    <string name="login_activity_admin_button_text">Login As Admin</string>
+    <string name="login_activity_admin_username_edit_text_hint">Username</string>
+    <string name="login_activity_admin_password_edit_text_hint">Password</string>
+    <string name="login_activity_forgot_password_text">Forgot Password?</string>
+    <!--Login Activity Ends-->
+
+    <!--Custom Tab Events Starts-->
+    <string name="custom_tab_ongoing_events">Ongoing</string>
+    <string name="custom_tab_upcoming_events">Upcoming</string>
+    <!--Custom Tab Events Ends-->
+
+    <!--Ongoing Item Starts-->
+    <string name="item_ongoing_events_category_layout_dummy_text">Women\'s</string>
+    <string name="item_ongoing_events_days_until_the_next_match">Days until the next match</string>
+    <string name="item_ongoing_events_event_type_dummy_text">Football</string>
+    <string name="item_ongoing_events_event_name_dummy_text">Joga Bonito</string>
+    <string name="item_ongoing_events_next_match_days_dummy_text">02</string>
+    <!--Ongoing Item Ends-->
+
+    <!--Upcoming Item Starts-->
+    <string name="item_upcoming_events_category_layout_dummy_text">Women\'s</string>
+    <string name="item_upcoming_events_days_until_the_next_match">Days left to register</string>
+    <string name="item_upcoming_events_event_type_dummy_text">Football</string>
+    <string name="item_upcoming_events_event_name_dummy_text">Joga Bonito</string>
+    <string name="item_upcoming_events_next_match_days_dummy_text">05</string>
+    <string name="upcoming_event_details_tab_details">Details</string>
+    <string name="upcoming_event_details_tab_rules">Rules</string>
+    <string name="upcoming_event_details_tab_contact">Contact</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="activity_login_app_title">SMapp</string>
+    <string name="login_activity_skip_text">Skip</string>
+    <string name="item_contact_coordinator_details_coordinator_name_dummy_text">Palaksh Pathak</string>
+    <string name="item_contact_coordinator_details_coordinator_number_dummy_text">+91 9999876545</string>
+    <string name="item_contact_coordinator_details_coordinator_email_dummy_text">palaksh15153@iiitd.ac.in</string>
+    <!--Upcoming Item Ends-->
+
+
+</resources>

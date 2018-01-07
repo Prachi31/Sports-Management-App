@@ -1,0 +1,37 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:id="@+id/add_event_time_start_end"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:textSize="16dp"
+        android:hint="Start Time"
+        android:inputType="time"
+        android:gravity="center"
+        android:id="@+id/match_start_time"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:text="To"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:textSize="16dp"
+        android:hint="End Time"
+        android:gravity="center"
+        android:id="@+id/match_end_time"
+        android:inputType="time"/>
+
+</LinearLayout>

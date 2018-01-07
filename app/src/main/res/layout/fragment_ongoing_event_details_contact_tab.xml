@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fragment_ongoing_event_details_contact_tab_container_padding"
+    android:id="@+id/fragment_ongoing_event_details_contact_tab_container"
+    tools:context="prachi14075.iiitd.ac.in.sportsmanagementapp.fragment.OngoingEventDetailsContactTabFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fragment_ongoing_event_details_contact_tab_recycler_view_margin_top"
+        android:layout_marginBottom="@dimen/fragment_ongoing_event_details_contact_tab_recycler_view_margin_bottom"
+        android:id="@+id/fragment_ongoing_event_details_contact_tab_recycler_view">
+
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>

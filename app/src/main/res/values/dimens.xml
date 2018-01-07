@@ -1,0 +1,213 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Login Activity Starts-->
+
+    <dimen name="login_activity_margin_left">8dp</dimen>
+    <dimen name="login_activity_margin_right">8dp</dimen>
+    <dimen name="login_activity_logo_imageview_width">120dp</dimen>
+    <dimen name="login_activity_logo_imageview_height">120dp</dimen>
+    <dimen name="login_activity_logo_imageview_margin_top">20dp</dimen>
+    <dimen name="login_activity_participant_button_height">40dp</dimen>
+    <dimen name="login_activity_participant_button_width">220dp</dimen>
+    <dimen name="login_activity_participant_button_margin_top">80dp</dimen>
+    <dimen name="login_activity_participant_button_imageview_width">0dp</dimen>
+    <dimen name="login_activity_participant_button_textview_width">0dp</dimen>
+    <dimen name="login_activity_partcipant_button_textview_size">14dp</dimen>
+    <dimen name="login_activity_view_layout_margin_top">30dp</dimen>
+    <dimen name="login_activityview_layout_margin_left">24dp</dimen>
+    <dimen name="login_activityview_layout__margin_right">24dp</dimen>
+    <dimen name="login_activity_view_height">1dp</dimen>
+    <dimen name="login_activity_view_width">0dp</dimen>
+    <dimen name="login_activity_view_text_width">0dp</dimen>
+    <dimen name="login_activity_admin_hidden_button_width">250dp</dimen>
+    <dimen name="login_activity_admin_hidden_button_height">40dp</dimen>
+    <dimen name="login_activity_admin_hidden_button_text_size">18dp</dimen>
+    <dimen name="login_activity_admin_hidden_button_margin_top">30dp</dimen>
+    <dimen name="login_activity_admin_outer_layout_margin_top">30dp</dimen>
+    <dimen name="login_activity_admin_username_layout_height">40dp</dimen>
+    <dimen name="login_activity_admin_username_imageview_height">25dp</dimen>
+    <dimen name="login_activity_admin_username_imageview_width">0dp</dimen>
+    <dimen name="login_activity_admin_username_edittext_width">0dp</dimen>
+    <dimen name="login_activity_admin_password_layout_height">40dp</dimen>
+    <dimen name="login_activity_admin_password_layout_margin_top">20dp</dimen>
+    <dimen name="login_activity_admin_imageview_height">30dp</dimen>
+    <dimen name="login_activity_admin_imageview_width">0dp</dimen>
+    <dimen name="login_activity_admin_textview_height">0dp</dimen>
+    <dimen name="login_activity_login_admin_button_width">250dp</dimen>
+    <dimen name="login_activity_login_admin_button_height">40dp</dimen>
+    <dimen name="login_activity_login_admin_button_margin_top">20dp</dimen>
+    <dimen name="login_activity_login_admin_button_imageview_width">0dp</dimen>
+    <dimen name="login_activity_login_admin_button_textview_width">0dp</dimen>
+    <dimen name="login_activity_login_admin_button_text_size">18dp</dimen>
+    <dimen name="login_activity_admin_forgot_password_margin_top">20dp</dimen>
+    <dimen name="activity_login_app_title_text_size">60dp</dimen>
+    <dimen name="activity_login_ap_title_margin_top">40dp</dimen>
+    <dimen name="login_activity_participant_button_padding">0dp</dimen>
+    <dimen name="login_activity_skip_margin_bottom">30dp</dimen>
+    <dimen name="login_activity_skip_text_size">20dp</dimen>
+    <dimen name="activity_login_admin_button_elevation">3dp</dimen>
+    <dimen name="login_activity_password_field_margin_right">24dp</dimen>
+    <!--Login Activity Ends-->
+
+    <!--Events Activity Starts-->
+    <dimen name="activity_events_toolbar_tabs_height">56dp</dimen>
+    <!--Events Activity Ends-->
+
+    <!--Fragment Ongoing Events Starts-->
+    <dimen name="fragment_ongoing_events_container_padding">8dp</dimen>
+    <dimen name="fragment_ongoing_events_recycler_view_margin_top">5dp</dimen>
+    <dimen name="fragment_ongoing_events_recycler_view_margin_bottom">10dp</dimen>
+    <!--Fragment Ongoing Events Ends-->
+
+    <!--Fragment Upcoming Events Starts-->
+    <dimen name="fragment_upcoming_events_container_padding">8dp</dimen>
+    <dimen name="fragment_upcoming_events_recycler_view_margin_top">5dp</dimen>
+    <dimen name="fragment_upcoming_events_recycler_view_margin_bottom">10dp</dimen>
+    <!--Fragment Ongoing Events Ends-->
+
+    <!--Custom Tab Events Starts-->
+    <dimen name="custom_tab_events_layout_width">0dp</dimen>
+    <dimen name="custom_tab_events_layout_padding">8dp</dimen>
+    <dimen name="custom_tab_events_icon_width">20dp</dimen>
+    <dimen name="custom_tab_events_icon_height">20dp</dimen>
+    <dimen name="custom_tab_events_label_margin_start">5dp</dimen>
+    <dimen name="custom_tab_events_label_size">18dp</dimen>
+    <!--Custom Tab Events Ends-->
+
+    <!--Notifications Activity Starts-->
+    <dimen name="activity_notifications_recycler_view_margin_top">5dp</dimen>
+    <dimen name="activity_notifications_recycler_view_margin_bottom">10dp</dimen>
+    <!--Notifications Activity Ends-->
+
+    <!--Item Ongoing Events Starts-->
+    <dimen name="item_ongoing_events_cardview_height">200dp</dimen>
+    <dimen name="item_ongoing_events_cardview_elevation">5dp</dimen>
+    <dimen name="item_ongoing_events_cardview_corner_radius">2dp</dimen>
+    <dimen name="item_ongoing_events_cardview_margin_top">10dp</dimen>
+    <dimen name="item_ongoing_events_cardview_margin_bottom">2dp</dimen>
+    <dimen name="item_ongoing_events_relative_layout_padding">8dp</dimen>
+    <dimen name="item_ongoing_events_check_image_margin_end">20dp</dimen>
+    <dimen name="item_ongoing_events_heading_layout_padding_end">8dp</dimen>
+    <dimen name="item_ongoing_events_heeading_layout_padding_start">8dp</dimen>
+    <dimen name="item_ongoing_events_heading_layout_margin_top">70dp</dimen>
+    <dimen name="item_ongoing_events_event_name_text_size">22dp</dimen>
+    <dimen name="item_ongoing_events_type_text_size">17dp</dimen>
+    <dimen name="item_ongoing_events_type_margin_top">5dp</dimen>
+    <dimen name="item_ongoing_events_next_match_layout_width">160dp</dimen>
+    <dimen name="item_ongoing_events_next_match_layout_margin_top">70dp</dimen>
+    <dimen name="item_ongoing_events_next_match_layout_padding_end">8dp</dimen>
+    <dimen name="item_ongoing_events_next_match_layout_text_width">0dp</dimen>
+    <dimen name="item_ongoing_events_next_match_days_text_size">34dp</dimen>
+    <dimen name="item_ongoing_events_category_layout_margin_top">10dp</dimen>
+    <dimen name="item_ongoing_events_category_layout_margin_bottom">2dp</dimen>
+    <dimen name="item_ongoing_events_category_layout_padding_end">8dp</dimen>
+    <dimen name="item_ongoing_events_category_layout_padding_start">8dp</dimen>
+    <dimen name="item_ongoing_events_category_linear_layout_width">70dp</dimen>
+    <dimen name="item_ongoing_events_category_linear_layout_height">25dp</dimen>
+    <dimen name="item_ongoing_events_category_linear_layout_elevation">2dp</dimen>
+    <dimen name="item_ongoing_events_category_layout_text_size">14dp</dimen>
+    <dimen name="item_ongoing_events_progress_layout_height">20dp</dimen>
+    <dimen name="item_ongoing_events_rounds_layout_round_name_text_size">15dp</dimen>
+    <dimen name="item_ongoing_events_rounds_layout_height">20dp</dimen>
+    <dimen name="item_ongoing_events_rounds_layout_width">70dp</dimen>
+    <!--Item Ongoing Events Starts-->
+
+    <!--Item Upcoming Events Starts-->
+    <dimen name="item_upcoming_events_cardview_height">200dp</dimen>
+    <dimen name="item_upcoming_events_cardview_elevation">5dp</dimen>
+    <dimen name="item_upcoming_events_cardview_corner_radius">2dp</dimen>
+    <dimen name="item_upcoming_events_cardview_margin_top">10dp</dimen>
+    <dimen name="item_upcoming_events_cardview_margin_bottom">2dp</dimen>
+    <dimen name="item_upcoming_events_relative_layout_padding">8dp</dimen>
+    <dimen name="item_upcoming_events_check_image_margin_end">20dp</dimen>
+    <dimen name="item_upcoming_events_heading_layout_padding_end">8dp</dimen>
+    <dimen name="item_upcoming_events_heeading_layout_padding_start">8dp</dimen>
+    <dimen name="item_upcoming_events_heading_layout_margin_top">90dp</dimen>
+    <dimen name="item_upcoming_events_event_name_text_size">22dp</dimen>
+    <dimen name="item_upcoming_events_type_text_size">17dp</dimen>
+    <dimen name="item_upcoming_events_type_margin_top">5dp</dimen>
+    <dimen name="item_upcoming_events_next_match_layout_width">160dp</dimen>
+    <dimen name="item_upcoming_events_next_match_layout_margin_top">90dp</dimen>
+    <dimen name="item_upcoming_events_next_match_layout_padding_end">8dp</dimen>
+    <dimen name="item_upcoming_events_next_match_layout_text_width">0dp</dimen>
+    <dimen name="item_upcoming_events_next_match_days_text_size">34dp</dimen>
+    <dimen name="item_upcoming_events_category_layout_margin_top">10dp</dimen>
+    <dimen name="item_upcoming_events_category_layout_padding_end">8dp</dimen>
+    <dimen name="item_upcoming_events_category_layout_padding_start">8dp</dimen>
+    <dimen name="item_upcoming_events_progress_layout_height">20dp</dimen>
+
+    <!--Item Upcoming Events Ends-->
+
+    <!--Item Category Upcoming Event Starts-->
+    <dimen name="item_category_upcoming_events_cardview_width">70dp</dimen>
+    <dimen name="item_category_upcoming_events_cardview_height">25dp</dimen>
+    <dimen name="item_category_upcoming_events_cardview_elevation">2dp</dimen>
+    <dimen name="item_category_upcoming_events_layout_text_size">14dp</dimen>
+    <dimen name="item_category_upcoming_events_cardview_corner_radius">5dp</dimen>
+    <dimen name="item_category_upcoming_events_cardview_margin_end">5dp</dimen>
+    <dimen name="item_category_upcoming_events_cardview_margin_bottom">2dp</dimen>
+    <!--Item Category Upcoming Event Ends-->
+
+    <!--Upcoming Event Details Activity Starts-->
+    <dimen name="activity_upcoming_event_details_toolbar_tabs_height">56dp</dimen>
+    <!--Upcoming Event Details Activity Ends-->
+
+    <!--Fragment Upcoming Event Details Rules Tab Starts-->
+    <dimen name="fragment_upcoming_event_details_rules_tab_card_view_margin_top">10dp</dimen>
+    <dimen name="fragment_upcoming_event_details_rules_tab_card_view_margin_bottom">5dp</dimen>
+    <dimen name="fragment_upcoming_event_details_rules_tab_card_view_elevation">5dp</dimen>
+    <dimen name="fragment_upcoming_event_details_rules_tab_card_view_padding">16dp</dimen>
+    <dimen name="fragment_upcoming_event_details_rules_tab_container_margin_left">8dp</dimen>
+    <dimen name="fragment_upcoming_event_details_rules_tab_container_margin_right">8dp</dimen>
+    <!--Fragment Upcoming Event Details Rules Tab Ends-->
+
+    <!--Fragment Upcoming Event Details Contact Tab Starts-->
+    <dimen name="fragment_upcoming_event_details_contact_tab_recycler_view_margin_top">10dp</dimen>
+    <dimen name="fragment_upcoming_event_details_contact_tab_recycler_view_margin_bottom">5dp
+    </dimen>
+    <dimen name="fragment_upcoming_event_details_contact_tab_container_padding">8dp</dimen>
+    <!--Fragment Upcoming Event Details Contact Tab Ends-->
+
+    <!--Item contact Coordinator Details Starts-->
+    <dimen name="item_contact_coordinator_details_cardview_elevation">2dp</dimen>
+    <dimen name="item_contact_coordinator_details_cardview_corner_radius">1dp</dimen>
+    <dimen name="item_contact_coordinator_details_cardview_margin_top">10dp</dimen>
+    <dimen name="item_contact_coordinator_details_cardview_margin_bottom">5dp</dimen>
+    <dimen name="item_contact_coordinator_details_coordinator_margin_top">10dp</dimen>
+    <dimen name="item_contact_coordinator_details_coordinator_padding">8dp</dimen>
+    <dimen name="item_contact_coordinator_details_coordinator_name_text_size">16dp</dimen>
+    <dimen name="item_contact_coordinator_details_call_linear_margin_top">10dp</dimen>
+    <dimen name="item_contact_coordinator_details_call_icon_height">24dp</dimen>
+    <dimen name="item_contact_coordinator_details_coordinator_number_text_size">14dp</dimen>
+    <dimen name="item_contact_coordinator_details_email_icon_height">24dp</dimen>
+    <dimen name="item_contact_coordinator_details_email_text_size">14dp</dimen>
+    <!--Item contact Coordinator Details Ends-->
+
+    <!--Fragment Upcoming Event Details Tab Starts-->
+    <dimen name="fragment_upcoming_event_details_tab_container_padding">8dp</dimen>
+    <dimen name="fragment_upcoming_event_details_tab_recycler_view_margin_top">10dp</dimen>
+    <dimen name="fragment_upcoming_event_details_tab_recycler_view_margin_bottom">5dp</dimen>
+    <dimen name="activity_ongoing_event_details_toolbar_tabs_height">56dp</dimen>
+    <dimen name="fragment_ongoing_event_details_rules_tab_container_margin_left">8dp</dimen>
+    <dimen name="fragment_ongoing_event_details_rules_tab_container_margin_right">8dp</dimen>
+    <dimen name="fragment_ongoing_event_details_rules_tab_card_view_elevation">5dp</dimen>
+    <dimen name="fragment_ongoing_event_details_rules_tab_card_view_padding">16dp</dimen>
+    <dimen name="fragment_ongoing_event_details_rules_tab_card_view_margin_top">10dp</dimen>
+    <dimen name="fragment_ongoing_event_details_rules_tab_card_view_margin_bottom">5dp</dimen>
+    <dimen name="fragment_ongoing_event_details_contact_tab_container_padding">8dp</dimen>
+    <dimen name="fragment_ongoing_event_details_contact_tab_recycler_view_margin_top">10dp</dimen>
+    <dimen name="fragment_ongoing_event_details_contact_tab_recycler_view_margin_bottom">5dp</dimen>
+    <dimen name="fragment_ongoing_event_details_tab_container_padding">8dp</dimen>
+    <dimen name="activity_my_matches_container_padding">8dp</dimen>
+    <dimen name="activity_my_matches_recycler_view_margin_top">5dp</dimen>
+    <dimen name="activity_my_matches_recycler_view_margin_bottom">5dp</dimen>
+    <!--Fragment Upcoming Event Details Tab Ends-->
+
+    <!--Item contact Coordinator Details Starts-->
+    <!--Item contact Coordinator Details Ends-->
+
+
+</resources>

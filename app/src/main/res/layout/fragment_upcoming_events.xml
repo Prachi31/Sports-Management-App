@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_upcoming_events_container"
+    android:layout_marginTop="@dimen/fragment_upcoming_events_recycler_view_margin_top"
+    android:layout_marginBottom="@dimen/fragment_upcoming_events_recycler_view_margin_bottom"
+    android:padding="@dimen/fragment_upcoming_events_container_padding"
+    tools:context="prachi14075.iiitd.ac.in.sportsmanagementapp.fragment.UpcomingEventsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_upcoming_events_recycler_view">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</FrameLayout>
+
+

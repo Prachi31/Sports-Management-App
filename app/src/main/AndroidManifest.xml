@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="prachi14075.iiitd.ac.in.sportsmanagementapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_login_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.EventsActivity"
+            android:label="@string/title_events_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.NotificationsActivity"
+            android:label="@string/title_notifications_activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activity.EventsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.UpcomingEventDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activity.EventsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.OngoingEventDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activity.EventsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MyMatchesActivity"
+            android:label="My Matches"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activity.OngoingEventDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.FixturesActivity"
+            android:label="fixtures"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activity.OngoingEventDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activity.UpcomingEventDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".activityAdmin.EventActivityAdmin"
+            android:label="@string/title_events_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activityAdmin.OngoingEventDetailsActivityAdmin"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activityAdmin.EventActivityAdmin" />
+        </activity>
+        <activity
+            android:name=".activity.RegistrationActivityTwo"
+            android:label="Choose time slot"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activity.OngoingEventDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".activityAdmin.AddEventActivity"
+            android:label="Add Event"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activityAdmin.EventActivityAdmin" />
+        </activity>
+        <activity
+            android:name=".activityAdmin.FixturesActivityAdmin"
+            android:label="Fixtures"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activityAdmin.OngoingEventDetailsActivityAdmin" />
+        </activity>
+        <activity android:name=".activityAdmin.EditEventActivity"
+            android:label="Edit Details"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activityAdmin.OngoingEventDetailsActivityAdmin" /></activity>
+        <activity android:name=".activity.RescheduleActivity"
+            android:label="Reschedule"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="prachi14075.iiitd.ac.in.sportsmanagementapp.activityAdmin.OngoingEventDetailsActivityAdmin" /></activity>
+    </application>
+
+</manifest>

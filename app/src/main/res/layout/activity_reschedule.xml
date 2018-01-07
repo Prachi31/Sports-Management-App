@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reschedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="prachi14075.iiitd.ac.in.sportsmanagementapp.activity.RescheduleActivity">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your Preferences"
+                android:id="@+id/select_pref_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_rescheduling_pref1"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1st Preference:"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/pref1_text"
+                        android:textSize="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date:"
+                        android:id="@+id/date1_text"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/pref1_text"
+                        android:layout_alignStart="@+id/pref1_text"
+                        android:layout_marginTop="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time:"
+                        android:id="@+id/time1_text"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/date1_text"
+                        android:layout_alignStart="@+id/date1_text"
+                        android:layout_marginTop="15dp" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pref1_choose_date"
+                        android:layout_alignTop="@+id/date1_text"
+                        android:layout_toEndOf="@+id/time1_text"
+                        android:layout_marginLeft="40dp"
+                        android:spinnerMode="dropdown" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pref1_choose_time"
+                        android:layout_alignTop="@+id/time1_text"
+                        android:layout_alignStart="@+id/pref1_choose_date"
+                        android:layout_marginTop="3dp"
+                        android:spinnerMode="dropdown" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_rescheduling_pref2"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="10dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2nd Preference:"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/pref2_text"
+                        android:textSize="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date:"
+                        android:id="@+id/date2_text"
+                        android:textSize="20dp"
+                        android:layout_alignStart="@+id/pref2_text"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/pref2_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time:"
+                        android:id="@+id/time2_text"
+                        android:layout_below="@+id/date2_text"
+                        android:layout_alignStart="@+id/date2_text"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pref2_choose_date"
+                        android:layout_alignTop="@+id/date2_text"
+                        android:layout_toEndOf="@+id/time2_text"
+                        android:layout_marginLeft="40dp"
+                        android:spinnerMode="dropdown" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pref2_choose_time"
+                        android:layout_alignTop="@+id/time2_text"
+                        android:layout_alignStart="@+id/pref2_choose_date"
+                        android:layout_marginTop="3dp"
+                        android:spinnerMode="dropdown" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_rescheduling_pref3"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="10dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3rd Preference:"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/pref3_text"
+                        android:textSize="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date:"
+                        android:id="@+id/date3_text"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/pref3_text"
+                        android:layout_alignStart="@+id/pref3_text"
+                        android:layout_marginTop="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time:"
+                        android:id="@+id/time3_text"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/date3_text"
+                        android:layout_alignStart="@+id/date3_text"
+                        android:layout_marginTop="15dp" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pref3_choose_date"
+                        android:layout_alignTop="@+id/date3_text"
+                        android:layout_toEndOf="@+id/time3_text"
+                        android:layout_marginLeft="40dp"
+                        android:spinnerMode="dropdown" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pref3_choose_time"
+                        android:layout_alignTop="@+id/time3_text"
+                        android:layout_alignStart="@+id/pref3_choose_date"
+                        android:layout_marginTop="3dp"
+                        android:spinnerMode="dropdown" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Request for Rescheduling"
+                android:id="@+id/submit_resch_req_button"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

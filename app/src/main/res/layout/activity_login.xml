@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download"
+    tools:context="prachi14075.iiitd.ac.in.sportsmanagementapp.activity.LoginActivity">
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:id="@+id/activity_login_app_title"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="@dimen/activity_login_ap_title_margin_top"-->
+        <!--android:src="@drawable/logoart"/>-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_login_app_title"
+        android:id="@+id/activity_login_app_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/activity_login_app_title_text_size"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_login_ap_title_margin_top" />
+
+    <LinearLayout
+        android:layout_width="@dimen/login_activity_participant_button_width"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/login_activity_participant_button_height"
+        android:background="@drawable/round_button"
+        android:id="@+id/activity_login_participant_button"
+        android:layout_below="@+id/activity_login_app_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_activity_participant_button_margin_top"
+        android:padding="@dimen/login_activity_participant_button_padding">
+
+        <ImageView
+            android:layout_width="@dimen/login_activity_participant_button_imageview_width"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/googleplus"
+            android:layout_weight="0.18"/>
+
+        <TextView
+            android:layout_width="@dimen/login_activity_participant_button_textview_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:text="@string/login_activity_login_participant_text"
+            android:textSize="@dimen/login_activity_partcipant_button_textview_size"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/activity_login_view_layout"
+        android:layout_marginTop="@dimen/login_activity_view_layout_margin_top"
+        android:layout_below="@id/activity_login_participant_button">
+
+        <View
+            android:layout_width="@dimen/login_activity_view_width"
+            android:layout_marginStart="@dimen/login_activityview_layout_margin_left"
+            android:layout_height="@dimen/login_activity_view_height"
+            android:layout_weight="0.4"
+            android:background="@color/login_view_color"/>
+
+        <TextView
+            android:layout_width="@dimen/login_activity_view_text_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="@string/login_activity_view_text"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="@dimen/login_activity_view_width"
+            android:layout_height="@dimen/login_activity_view_height"
+            android:layout_marginEnd="@dimen/login_activityview_layout__margin_right"
+            android:layout_weight="0.4"
+            android:background="@color/login_view_color"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/login_activity_admin_hidden_button_width"
+        android:layout_height="@dimen/login_activity_admin_hidden_button_height"
+        android:textSize="@dimen/login_activity_admin_hidden_button_text_size"
+        android:layout_below="@id/activity_login_view_layout"
+        android:layout_marginTop="@dimen/login_activity_admin_hidden_button_margin_top"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="@string/login_activity_admin_button_text"
+        android:textAllCaps="false"
+        android:background="#80ff7171"
+        android:id="@+id/activity_login_admin_hidden_button"
+        android:elevation="3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/activity_login_admin_login_layout"
+        android:layout_below="@id/activity_login_view_layout"
+        android:layout_marginStart="@dimen/login_activity_margin_left"
+        android:layout_marginEnd="@dimen/login_activity_margin_right"
+        android:layout_marginTop="@dimen/login_activity_admin_outer_layout_margin_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_activity_admin_username_layout_height"
+            android:id="@+id/activity_login_admin_login_username_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/login_activity_admin_username_imageview_width"
+                android:layout_height="@dimen/login_activity_admin_username_imageview_height"
+                android:src="@drawable/ic_person_white"
+                android:layout_weight="0.2"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="@dimen/login_activity_admin_username_edittext_width"
+                android:layout_height="match_parent"
+                android:id="@+id/activity_login_admin_login_username_field"
+                android:layout_marginEnd="@dimen/login_activity_password_field_margin_right"
+                android:inputType="text"
+                android:hint="@string/login_activity_admin_username_edit_text_hint"
+                android:layout_weight="0.8"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_activity_admin_password_layout_height"
+            android:layout_marginTop="@dimen/login_activity_admin_password_layout_margin_top"
+            android:id="@+id/activity_login_admin_login_password_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/login_activity_admin_imageview_width"
+                android:layout_height="@dimen/login_activity_admin_imageview_height"
+                android:src="@drawable/ic_action_lock_closed_white"
+                android:layout_weight="0.2"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="@dimen/login_activity_admin_textview_height"
+                android:layout_height="match_parent"
+                android:id="@+id/activity_login_admin_login_password_field"
+                android:layout_marginEnd="@dimen/login_activity_password_field_margin_right"
+                android:inputType="textPassword"
+                android:hint="@string/login_activity_admin_password_edit_text_hint"
+                android:fontFamily="sans-serif"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+
+                android:layout_weight="0.8"
+                android:backgroundTint="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/login_activity_login_admin_button_width"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/login_activity_login_admin_button_height"
+            android:background="#80ff7171"
+            android:layout_marginTop="@dimen/login_activity_login_admin_button_margin_top"
+            android:id="@+id/activity_login_admin_button"
+            android:elevation="@dimen/activity_login_admin_button_elevation">
+
+            <ImageView
+                android:layout_width="@dimen/login_activity_login_admin_button_imageview_width"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"/>
+
+            <TextView
+                android:layout_width="@dimen/login_activity_login_admin_button_textview_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:text="@string/login_activity_admin_button_text"
+                android:textSize="@dimen/login_activity_login_admin_button_text_size"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_activity_admin_forgot_password_margin_top"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/login_activity_forgot_password_text"
+            android:id="@+id/activity_login_admin_forgot_password"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_activity_skip_text"
+        android:id="@+id/activity_login_skip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/login_activity_skip_margin_bottom"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_activity_skip_text_size" />
+
+</RelativeLayout>
+
+
+
+

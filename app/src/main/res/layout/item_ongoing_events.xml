@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_ongoing_events_cardview_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/item_ongoing_events_cardview_elevation"
+    app:cardCornerRadius="@dimen/item_ongoing_events_cardview_corner_radius"
+    android:layout_marginTop="@dimen/item_ongoing_events_cardview_margin_top"
+    android:layout_marginBottom="@dimen/item_ongoing_events_cardview_margin_bottom"
+    android:id="@+id/item_ongoing_events_cardview">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/item_ongoing_events_background"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/item_ongoing_events_relative_layout_padding"
+        android:id="@+id/item_ongoing_events_relative_layout"
+        android:background="@drawable/gradient">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/item_ongoing_events_check_image_margin_end"
+            android:id="@+id/item_ongoing_events_check_image"
+            android:src="@drawable/ic_check_circle"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/item_ongoing_events_heading_layout_padding_end"
+            android:paddingStart="@dimen/item_ongoing_events_heeading_layout_padding_start"
+            android:layout_marginTop="@dimen/item_ongoing_events_heading_layout_margin_top"
+            android:id="@+id/item_ongoing_events_heading_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_ongoing_events_event_name_text_size"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/item_ongoing_events_event_name"
+                android:text="@string/item_ongoing_events_event_name_dummy_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/item_ongoing_events_type_margin_top"
+                android:id="@+id/item_ongoing_events_event_type"
+                android:text="@string/item_ongoing_events_event_type_dummy_text"
+                android:textSize="@dimen/item_ongoing_events_type_text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/item_ongoing_events_next_match_layout_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/item_ongoing_events_next_match_layout_margin_top"
+            android:paddingEnd="@dimen/item_ongoing_events_next_match_layout_padding_end"
+            android:id="@+id/item_ongoing_events_next_match_layout">
+
+            <TextView
+                android:layout_width="@dimen/item_ongoing_events_next_match_layout_text_width"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/item_ongoing_events_next_match_days"
+                android:text="@string/item_ongoing_events_next_match_days_dummy_text"
+                android:textSize="@dimen/item_ongoing_events_next_match_days_text_size"/>
+
+            <TextView
+                android:layout_width="@dimen/item_ongoing_events_next_match_layout_text_width"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:layout_weight="0.8"
+                android:id="@+id/item_ongoing_events_status"
+                android:text="@string/item_ongoing_events_days_until_the_next_match"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_category_upcoming_events_cardview_height"
+            android:id="@+id/item_ongoing_events_category_recycler_view"
+            android:layout_below="@id/item_ongoing_events_heading_layout"
+            android:layout_marginTop="@dimen/item_ongoing_events_category_layout_margin_top"
+            android:layout_marginBottom="@dimen/item_ongoing_events_category_layout_margin_bottom"
+            android:paddingEnd="@dimen/item_ongoing_events_category_layout_padding_end"
+            android:paddingStart="@dimen/item_ongoing_events_category_layout_padding_start"
+            android:orientation="horizontal">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/layout1"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Round 1"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/layout2"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Round 2"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/layout3"
+                android:orientation="horizontal"
+                android:background="@color/grey_light">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Semi-Finals"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:id="@+id/layout4"
+                android:orientation="horizontal"
+                android:background="@color/grey_light">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Finals"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
